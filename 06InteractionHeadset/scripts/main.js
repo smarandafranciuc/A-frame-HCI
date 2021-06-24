@@ -36,13 +36,9 @@ myOtherBox.object3D.scale.y *= growspeed;
 	myOtherBox.object3D.scale.z *= growspeed;
 console.log(myOtherBox.object3D.scale);
 }
-function color(){
-	//myOtherBox.object3D.style.color="blue";
-	myOtherBox.components.material.material.color="blue";
-}
 
 myOtherBox.addEventListener('click', function(){ // uses a fuse
 	grow();
 console.log('grew');
-}, function() {color();}
+}
 );
